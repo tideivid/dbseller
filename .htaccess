@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^login/?$					views/login/index.php [NC]
+RewriteRule ^login/erro/?$				views/login/index.php [NC]
+RewriteRule ^sair/?$					controlers/login.php?logout=1 [NC]
+
+
+RewriteRule ^usuarios/?$ 				views/usuarios/index.php [NC]
+RewriteRule ^tarefas/?$ 				views/tarefas/index.php [NC]
