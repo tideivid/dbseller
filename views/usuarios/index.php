@@ -7,7 +7,7 @@
                     <div class="col-lg-12 col-status">
                     	<h1>Usuários</h1>
                         <div class="opcoes">
-                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal_cadastro_usuario">Adicionar</button>
+                             <button type="button" class="btn btn-default reset" data-toggle="modal" data-target="#modal_cadastro_usuario">Adicionar</button>
                         </div>
                         <table id="lista_usuarios">
                             <thead>

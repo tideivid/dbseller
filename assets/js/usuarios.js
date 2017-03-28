@@ -42,7 +42,7 @@ $(document).ready(function() {
         var email     = $('#email');
         var senha     = $('#senha');
 
-        var v_email   = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+        var v_email   = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
 
         if(nome.val() == ""){
           msg   = 'O nome é obrigatório';
@@ -55,7 +55,7 @@ $(document).ready(function() {
           $('<p class="erro">'+msg+'</p>').insertAfter(email);
           valid = false;
         }else{
-            if(!v_email.test(email)){
+            if(!v_email.test(email.val())){
                 msg   = 'O email é inválido';
                 $('<p class="erro">'+msg+'</p>').insertAfter(email);
                 valid = false;

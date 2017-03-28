@@ -48,17 +48,14 @@
            $.each(JSON.parse(data), function(){
               switch(this.status){
                   case '1':
-                    if(this.prazo < hj){wr = 'aviso';}
                     l1 += '<li class="tarefa '+wr+'" data-toggle="modal" data-target="#modal_editar">'
                     +this.titulo+'<ul class="dados"><li class="id">'+this.id+'</li><li class="titulo">'+this.titulo+'</li><li class="prazo">'+this.prazo+'</li><li class="descricao">'+this.descricao+'</li><li class="status">'+this.status+'</li><li class="usuario">'+this.usuario+'</li></ul></li>';
                     break;
                   case '2':
-                    if(this.prazo < hj){wr = 'aviso';}
                     l2 += '<li class="tarefa '+wr+'" data-toggle="modal" data-target="#modal_editar">'
                     +this.titulo+'<ul class="dados"><li class="id">'+this.id+'</li><li class="titulo">'+this.titulo+'</li><li class="prazo">'+this.prazo+'</li><li class="descricao">'+this.descricao+'</li><li class="status">'+this.status+'</li><li class="usuario">'+this.usuario+'</li></ul></li>';
                     break;
                   case '3':
-                    if(this.prazo < hj){wr = 'aviso';}
                     l3 += '<li class="tarefa '+wr+'" data-toggle="modal" data-target="#modal_editar">'
                     +this.titulo+'<ul class="dados"><li class="id">'+this.id+'</li><li class="titulo">'+this.titulo+'</li><li class="prazo">'+this.prazo+'</li><li class="descricao">'+this.descricao+'</li><li class="status">'+this.status+'</li><li class="usuario">'+this.usuario+'</li></ul></li>';
                     break;

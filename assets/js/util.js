@@ -15,7 +15,7 @@
     });
 
 
-    $('input').focus(function(){
+    $('input, textarea').focus(function(){
       $('.erro').remove();
     });
     
@@ -37,6 +37,12 @@
           msg   = 'O email é obrigatório';
           $('<p class="erro">'+msg+'</p>').insertAfter(email);
           valid = false;
+        }else{
+            if(!v_email.test(email.val())){
+                msg   = 'O email é inválido';
+                $('<p class="erro">'+msg+'</p>').insertAfter(email);
+                valid = false;
+            }
         }
         
         if(senha.val() == ""){
