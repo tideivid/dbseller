@@ -4,6 +4,8 @@
 
 #Configurar dados de acesso ao banco de dados em config/db.php
 
+#Executar o arquivo dump/init.sql para criação do banco e dos dados iniciais
+
 #O sistema permite a criação de usuáios e tarefas.
 
 #Um usuário pode criar tarefas, editar e excluir tarefas(somente as que estão sob sua responsabilidade).
